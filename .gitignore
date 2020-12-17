@@ -63,6 +63,52 @@ local.properties
 # Typically, this file would be tracked if it contains build/dependency configurations:
 #.project
 
+######################
+
+# Eclipse
+
+######################
+
+  
+
+*.pydevproject
+
+.project
+
+.metadata
+
+bin/**
+
+tmp/**
+
+tmp/**/*
+
+*.tmp
+
+*.bak
+
+*.swp
+
+*~.nib
+
+.classpath
+
+.settings/
+
+.loadpath
+
+/src/main/resources/rebel.xml
+
+# External tool builders
+
+.externalToolBuilders/
+
+  
+
+# Locally stored "Eclipse launch configurations"
+
+*.launch
+
 ### Eclipse Patch ###
 # Spring Boot Tooling
 .sts4-cache/
