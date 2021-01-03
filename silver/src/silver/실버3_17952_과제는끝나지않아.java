@@ -1,4 +1,4 @@
-// 백준 179529번 자바 과제는 끝나지 않아
+// 백준 17952번 자바 과제는 끝나지 않아
 // 스택으로 풀었음
 
 package silver;
@@ -10,7 +10,7 @@ import java.nio.Buffer;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class 실버3_179529_과제는끝나지않아 {
+public class 실버3_17952_과제는끝나지않아 {
 
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
