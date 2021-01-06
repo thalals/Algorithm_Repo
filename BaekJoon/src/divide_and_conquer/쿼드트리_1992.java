@@ -19,11 +19,9 @@ public class 쿼드트리_1992 {
 	
 	public static void main(String[] args) throws IOException {
 		
-		//bw.append("(");
 		int n = Integer.parseInt(br.readLine());
 		
 		int map[][] = new int[n][n];
-		boolean check[][] = new boolean[n][n];
 		
 		for(int i =0;i<n;i++) {
 			String str[] = br.readLine().split("");
@@ -33,10 +31,6 @@ public class 쿼드트리_1992 {
 		n=n/2;
 
 		divied(map, n*2, 0, 0);
-//		divied(map,n,0,0);	//왼쪽
-//		divied(map,n,n,0);	//오른쪽	
-//		divied(map,n,0,n);	//왼 아래
-//		divied(map,n,n,n);	//오 아래
 
 		bw.flush();
 		
@@ -66,6 +60,8 @@ public class 쿼드트리_1992 {
 					divied(map,diviede_n,x,y+diviede_n);	//왼 아래
 					divied(map,diviede_n,x+diviede_n,y+diviede_n);	//오 아래
 				}
+				if(!check)
+					break;
 			}
 			if(!check)
 				break;
