@@ -23,15 +23,20 @@ public class °ö¼À_1629 {
 		
 		
 
-		System.out.println(recursive(a, b, c, 0)%c);
+		System.out.println(recursive(a, b, c)%c);
 	}
 	
-	static long recursive(long a, long b, long c, long count) {
+	static long recursive(long a, long b, long c) {
 		if(b==1)
-			return a;
+			return a%c;
 		
-		if(b%2==1) {
-			
+		if(b%2==0) {
+			long temp = recursive(a,b/2,c);
+			return (temp*temp)%c;
+		}
+		else if (b%2==1) {
+			long temp = recursive(a,b-1,c);
+			return (a*temp)%c;
 		}
 		
 		return 0;
