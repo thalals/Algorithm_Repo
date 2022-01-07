@@ -10,7 +10,7 @@ package 개인문제;
 
 import java.io.*;
 
-public class 송연2 {
+public class 송연2_문자분리 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

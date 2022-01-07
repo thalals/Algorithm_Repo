@@ -10,7 +10,7 @@ package 개인문제;
 
 import java.io.*;
 
-public class 송연1 {
+public class 송연1_문자개수 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
