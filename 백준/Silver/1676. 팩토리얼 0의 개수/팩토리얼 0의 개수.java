@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    static int n, r, c, cnt;
+    static int n;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -11,23 +11,11 @@ public class Main {
         String temp[] = br.readLine().split(" ");
 
         n = Integer.parseInt(temp[0]);
-
-        int result = factorial(n);
-        System.out.println(result);
+        
+        //팩토리얼 중 5의 개수만, 5!, 10!. 15!
+        System.out.println(n/5 + n/25+n/125);
     }
-
-    //n<500
-    public static int factorial(int n){
-        int count=0;
-
-        for(int i=n;i>0;i--){
-            if(i%5==0) {
-                count+=i/5;
-            }
-        }
-
-        return n/5 + n/25+n/125;
-    }
+    
 
 
 }
