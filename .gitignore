@@ -71,11 +71,8 @@ local.properties
 
   
 
-*.pydevproject
-
 .project
 
-.metadata
 
 bin/**
 
@@ -83,31 +80,18 @@ tmp/**
 
 tmp/**/*
 
-*.tmp
-
-*.bak
-
-*.swp
-
-*~.nib
-
 .classpath
 
-.settings/
-
-.loadpath
 
 /src/main/resources/rebel.xml
 
 # External tool builders
 
-.externalToolBuilders/
 
   
 
 # Locally stored "Eclipse launch configurations"
 
-*.launch
 
 ### Eclipse Patch ###
 # Spring Boot Tooling
@@ -217,7 +201,6 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -406,3 +389,16 @@ fabric.properties
 
 #코테풀이
 test
+
+# SonarLint plugin
+.idea/sonarlint/
+
+### Intellij+iml Patch ###
+# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
+
+*.iml
+modules.xml
+.idea/misc.xml
+*.ipr
+
+# End of https://www.toptal.com/developers/gitignore/api/intellij+iml
