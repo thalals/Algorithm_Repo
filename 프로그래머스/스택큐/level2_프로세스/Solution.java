@@ -1,4 +1,4 @@
-package 스택큐.leve2_프로세스;
+package 스택큐.level2_프로세스;
 
 import java.util.Collections;
 import java.util.LinkedList;
