@@ -1,4 +1,4 @@
-package dfs_bfs;
+package dfs_bfs.level2_타켓넘버;
 
 //dfs
 public class 타겟_넘버 {
