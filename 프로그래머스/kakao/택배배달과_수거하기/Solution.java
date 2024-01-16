@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 import java.util.stream.IntStream;
 
 public class Solution {
@@ -28,13 +26,14 @@ public class Solution {
                     .findFirst()
                     .getAsInt();
 
+
             int pickupLongIndex = IntStream.iterate(pickups.length - 1, i -> i >= 0, i -> i--)
                     .map(i -> pickups[i])
                     .filter(value -> value > 0)
                     .findFirst()
                     .getAsInt();
 
-            int initCap = getDeliveryBox();
+            int initCap = getDeliveryBox(1,1,new int[4]);
             int initBox = 0;
 
             if (deliveriesLongIndex >= pickupLongIndex) {
