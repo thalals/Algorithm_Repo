@@ -10,13 +10,13 @@ public class Solution {
     @Test
     public void test() {
         Assertions.assertAll(
-//                () -> Assertions.assertEquals(solution("1924", 2), "94"),
-//                () -> Assertions.assertEquals(solution("1231234", 3), "3234"),
-//                () -> Assertions.assertEquals(solution("4177252841", 4), "775841"),
-//                () -> Assertions.assertEquals(solution("720378", 2), "7378"),
-//                () -> Assertions.assertEquals(solution("928857", 3), "988"),
-//                () -> Assertions.assertEquals(solution("99991", 3), "99"),
-//                () -> Assertions.assertEquals(solution("10001", 3), "11"),
+                () -> Assertions.assertEquals(solution("1924", 2), "94"),
+                () -> Assertions.assertEquals(solution("1231234", 3), "3234"),
+                () -> Assertions.assertEquals(solution("4177252841", 4), "775841"),
+                () -> Assertions.assertEquals(solution("720378", 2), "7378"),
+                () -> Assertions.assertEquals(solution("928857", 3), "988"),
+                () -> Assertions.assertEquals(solution("99991", 3), "99"),
+                () -> Assertions.assertEquals(solution("10001", 3), "11"),
                 () -> Assertions.assertEquals(solution("909090", 1), "99090")
         );
     }
